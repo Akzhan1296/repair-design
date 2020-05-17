@@ -34,7 +34,7 @@
                     <a href="#" class="phone contacts__phone">
                         +7 (999) 768-32-99
                     </a>
-                    <button class="button contacts__button button--primary">
+                    <button  class="button contacts__button button--primary" data-toggle="modal">
                         <!-- button => это общие стили для кнопок
                             contacts__button стиль элемента
                             button--primary для модификатор который имеет цвета  -->
@@ -47,6 +47,8 @@
         </div>
         <!-- /.container -->
     </header>
+
+    
     <main>
         <section class="hero">
             <div class="instagram hero__instagram">
@@ -63,7 +65,7 @@
                     <p class="hero__text">
                         Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы
                     </p> 
-                    <button class="button hero__button button--primary" >
+                    <button class="button hero__button button--primary" data-toggle="modal">
                         <!--общий класс button 
                         hero__button элемент который позиционирует
                         button-primary цвета модификация  -->
@@ -224,7 +226,7 @@
                 </div>
                 <div class="row">
                     <col>
-                        <div class="card ">
+                        <div class="card types__card">
                             <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Минимальный</h3>
@@ -249,7 +251,7 @@
                         </div>
                         <!-- /.card -->
                     <col>
-                        <div class="card ">
+                        <div class="card types__card">
                             <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Стандартный</h3>
@@ -279,7 +281,7 @@
                         </div>
                         <!-- /.card -->
                     <col>
-                        <div class="card ">
+                        <div class="card types__card">
                             <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
                             <div class="card__text">
                                 <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -316,9 +318,35 @@
                         <!-- /.card -->
                 </div>
                 <!-- /.row -->
-
             </div>
         </section>
     </main>
+    <div class="modal  ">
+        <div class="modal__dialog">
+            <button class="modal__close"></button>
+            <h3 class="modal__title">
+                Оставьте заявку и наш менеджер свяжется с вами
+            </h3>
+            <form action="#" class="form modal__form">
+                <label for="user-name" class="label form__label label--light">Имя</label>
+                <input placeholder="Как вас зовут:" type="text" class="input form__input modal__input" id="user-name">
+                <label for="user-phone" class="label form__label label--light">Телефон</label>
+                <input placeholder="Ваш номер телефона::" type="tel" class="input form__input modal__input" id="user-phone">
+                <label for="user-email" class="label form__label label--light">Email</label>
+                <input placeholder="Ваш email" type="email" class="input form__input modal__input" id="user-email">
+                <div class="policy modal__policy">
+                    <input type="checkbox" checked name="policy-checkbox" id="policy-checkbox" class="policy__checkbox">
+                    <label class="policy__label" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
+                    
+                </div>
+                <button class="button button--primary modal__button">Отправить заявку</button>
+            </form>
+            <!-- /.form modal__form -->
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
