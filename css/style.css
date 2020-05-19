@@ -332,11 +332,15 @@ template {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      box-shadow: none; }
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.8); }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
+    transition: background-color 0.3s;
     color: #fff; }
+    .button--outline:hover {
+      background-color: #E3B873;
+      border: 1px solid #E3B873; }
 
 .label {
   font-size: 1.07rem; }
@@ -401,8 +405,11 @@ img {
   padding: 60px 0; }
   .section-title {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Veseva One', cursive; }
+    text-transform: uppercase; }
+    .section-title__heading {
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -438,11 +445,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo {
+    text-decoration: none; }
 
 .logo {
   color: #E3B873;
+  transition: color 0.3s;
   text-transform: uppercase;
-  font-size: 0.85rem; }
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 16px; }
+  .logo:hover {
+    color: yellow; }
 
 .nav__item {
   color: #fff;
@@ -450,7 +465,8 @@ img {
   text-transform: uppercase;
   margin-right: 2.85rem;
   transition: color 0.3s;
-  font-size: 0.75rem; }
+  font-size: 1rem;
+  line-height: 16px; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -458,7 +474,12 @@ img {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+  transition: color 0.3s;
+  font-size: 1rem;
+  line-height: 16px; }
+  .contacts__phone:hover {
+    color: yellow; }
 
 .hero {
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
@@ -478,6 +499,9 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
+  .hero-title {
+    font-weight: normal;
+    margin-bottom: 19px; }
   .hero__content {
     max-width: 47.85rem;
     position: relative;
@@ -495,6 +519,8 @@ img {
     min-width: 17.6rem;
     min-height: 6.92rem;
     background-color: #131313;
+    font-family: Yeseva One;
+    font-weight: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,7 +537,10 @@ img {
       margin-left: 12px; }
   .hero__text {
     font-size: 1.57rem;
-    max-width: 500px; }
+    max-width: 500px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 41px; }
   .hero__button {
     margin-right: 20px; }
 
@@ -526,6 +555,7 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
+    transition: color 0.3s;
     transform: rotate(90deg);
     line-height: 0.8; }
     .instagram__link::after {
@@ -534,6 +564,8 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      color: yellow; }
 
 .title {
   margin: 0;
@@ -565,6 +597,9 @@ img {
 
 .card__title {
   font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
   font-size: 1.29rem;
   margin-top: 0;
   margin-bottom: 0.7rem; }
@@ -668,6 +703,8 @@ img {
     line-height: 135.84%; } }
 
 @media screen and (max-width: 570px) {
+  .container {
+    width: 90%; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -679,14 +716,32 @@ img {
   .hero__scroll--down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 22.86rem;
+    margin: auto; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    line-height: 22px; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .control {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+  .design {
+    padding-top: 52px;
+    background-color: #252525; }
+    .design--light {
+      color: #fff; }
+  .types {
+    padding-bottom: 55px; }
+    .types__card:last-child {
+      margin-bottom: 0; }
+  .card__text {
+    width: 240px; }
+  .section-title__heading {
+    font-size: 22px; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll--down {

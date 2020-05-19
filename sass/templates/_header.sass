@@ -11,10 +11,18 @@
     display: flex
     justify-content: space-between
     align-items: center
+    &__logo
+        text-decoration: none
 .logo 
     color: $primary
+    transition: color 0.3s
     text-transform: uppercase
     font-size: 0.85rem  
+    font-weight: 500
+    font-size: 1rem
+    line-height: 16px
+    &:hover 
+        color: yellow
 .nav
     &__item 
         color: $light
@@ -22,7 +30,8 @@
         text-transform: uppercase
         margin-right: 2.85rem
         transition: color 0.3s
-        font-size: 0.75rem
+        font-size: 1rem
+        line-height: 16px
         &:hover 
             color: $primary
 .phone 
@@ -30,4 +39,10 @@
 .contacts
     &__phone
         margin-right: 45px
+        transition: color 0.3s
+        font-size: 1rem
+        line-height: 16px
+        &:hover
+            color: yellow
+            
         

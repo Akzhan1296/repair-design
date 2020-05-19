@@ -9,15 +9,19 @@
     &--primary
         background-color: $primary
         color: $light
-        box-shadow: 0px 5px 15px rgba($primary, 0.2);
+        box-shadow: 0px 5px 15px rgba($primary, 0.2)
         transition: box-shadow 0.3s
         &:hover
-            box-shadow: none
+            box-shadow: 0px 5px 15px rgba($primary, 0.8)
 
     &--outline 
         border: 1px solid $light
         background-color: transparent
+        transition: background-color 0.3s
         color: $light
+        &:hover
+            background-color: $primary
+            border: 1px solid $primary
 .label 
     font-size: 1.07rem
     &--light

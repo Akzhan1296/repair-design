@@ -31,6 +31,8 @@
                 line-height: 135.84%;
 
 @media screen and (max-width: 570px)
+    .container
+        width: 90%
     .contacts
         &__phone
             margin-right: 0
@@ -40,20 +42,42 @@
             display: none
     .title
         font-size: 1.64rem
+        
     .hero
         &__scroll--down
             display: none
         &__content
             max-width: 22.86rem
+            margin: auto
         &__text
             font-size: 1.29rem
             margin-bottom: 2.28rem
+            line-height: 22px
         &__button
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .control 
+        padding-top: 50px
+        padding-bottom: 40px
+    .design 
+        padding-top: 52px
+        background-color: #252525
+        &--light 
+            color: $light
+    .types 
+        padding-bottom: 55px
+        &__card 
+            &:last-child
+                margin-bottom: 0
+    .card 
+        &__text
+            width: 240px
+    .section-title__heading 
+        font-size: 22px;
 
 @media screen and (max-height: 520px)
     .hero
         &__scroll--down
             display: none
+
