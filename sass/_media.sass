@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1366px)
     html 
         font-size: 12px
     .nav
@@ -12,6 +12,11 @@
             display: none
         &__content
             margin-left: 0
+    .row
+        flex-direction: column
+    .col-50
+        width: 100%
+        margin: 40px
 
 @media screen and (max-width: 760px)
     .row 
@@ -73,8 +78,25 @@
     .card 
         &__text
             width: 240px
-    .section-title__heading 
-        font-size: 22px;
+    .section
+        &-title
+            &__heading 
+                font-size: 22px;
+                margin-top: 0
+            &__word
+                &::after
+                    display: none
+            &__text
+                font-weight: normal
+                font-size: 14px
+                line-height: 158.48%
+                text-transform: none
+    .projects 
+        padding-top: 0
+        padding-bottom: 10px
+    .col-50
+        margin-top: 0
+
 
 @media screen and (max-height: 520px)
     .hero
