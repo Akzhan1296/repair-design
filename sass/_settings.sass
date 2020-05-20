@@ -10,13 +10,31 @@ img
     //Максимальная ширина от родителя 
 .section 
     padding: 60px 0
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
         text-transform: uppercase
+        
+        &__word
+            display: flex
+            align-items: center
+            &::after 
+                content: ''
+                width: 90px
+                height: 2px
+                background-color: $primary
+                margin-left: 2rem
+        &--left 
+            text-align: left
         &__heading
             font-family: 'Yeseva One', cursive
             font-style: normal;
             font-weight: normal;
+            line-height: 138%
+            &--primary
+                color: $primary
         &__image
             display: flex
             justify-content: center
@@ -27,6 +45,11 @@ img
                 height: 2px
                 background-color: $primary
                 margin: 0 10px
+        &__text
+            font-size: 1.28rem
+            line-height: 2.07rem
+            max-width: 31.57rem
+
     &-descr
         text-align: center
         //font-family: FuturaBook
